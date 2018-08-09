@@ -2,12 +2,101 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>GM50X - Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GM50X</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1>Bem vindo à minha página pessoal</h1>
-    <p>Estou em construção no momento, mas certamente no futuro serei
-      uma página magnificente com várias tecnologias além do HTML5. Terei
-      CSS, JavaScript (ou ECMAScript), imagens e muito mais! Até breve</p>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GM50X</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <div class="btn-group" role="group" aria-label="Button Group">
+                <li class="nav-item active">
+                  <a class="nav-link btn btn-dark" href="#">Homepage <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link btn btn-dark" href="#">Projetos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-dark" href="http://github.com/gm50x?tab=repositories">Repositórios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-dark" href="#">Sobre</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="jumbotron">
+        <h1 class="display-4">It'sa me, Mario!</h1>
+        <p class="lead">Bem vindo à minha página!</p>
+        <hr class="my-4">
+        <p>Esta página está em construção e receberá diversos complementos em breve. Fique ligado!</p>
+        <a class="btn btn-dark btn-lg" href="#" role="button">Ir para Repositórios</a>
+      </div>
+    </section>
+    <footer>
+      <div class="jumbotron">
+        <table class="clock">
+          <tr class="info-header">
+            <td colspan="5">Relógio em JavaScript</td>
+          </tr>
+          <tr class="info-display">
+            <span>
+              <td id="hours">23</td>
+              <td>:</td>
+              <td id="minutes">59</td>
+              <td>:</td>
+              <td id="seconds">59</td>
+            </span>
+          </tr>
+          <tr class="info-footer">
+            <td>Horas</td>
+            <td></td>
+            <td>Minutos</td>
+            <td></td>
+            <td>Segundos</td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+
+    <script>
+      /*
+       * clock()
+       * Função responsável por capturar os valores individuais de um Relógio
+       * E atualizá-los na interface gráfica. Utiliza recursos de jQuery.
+       */
+      function clock() {
+        const now = new Date();
+        const seconds = now.getSeconds();
+        const minutes = now.getMinutes();
+        const hours = now.getHours();
+
+
+        $('#hours').html(hours < 10 ? '0' + hours : hours);
+        $('#minutes').html(minutes < 10 ? '0' + minutes : minutes);
+        $('#seconds').html(seconds < 10 ? '0' + seconds : seconds);
+        setTimeout(clock, 1000);
+      }
+
+      clock();
+    </script>
   </body>
 </html>

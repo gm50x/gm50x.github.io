@@ -1,0 +1,24 @@
+body {
+  font-family: 'Modern Antiqua', cursive;
+  background: #bdc3c7;
+}
+
+section {
+  margin-top: 2em;
+}
+.clock {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.info-display{
+  font-size: 3em;
+}
+
+.info-header {
+  font-size: 2.5em;
+}
+
+.info-footer {
+  font-size: 1.25em;
+}
