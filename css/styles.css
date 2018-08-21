@@ -12,7 +12,7 @@ body {
 }
 
 .integrated-background {
-  background-image: url('../img/hero.jpg');
+  background-image: url('../img/background.jpg');
   min-height: 100vh;
 }
 
@@ -357,5 +357,30 @@ footer a {
     border: solid 2px #fff;
     border-radius: 25px;
   }
+}
 
+
+/* CLOCK STYLES */
+table.clock {
+  margin-top: 100px;
+  padding: 20px;
+  border: solid 2px #fff;
+  box-shadow: 1px 1px 1px #fff;
+}
+
+.clock {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.info-display{
+  font-size: 3em;
+}
+
+.info-header {
+  font-size: 2.5em;
+}
+
+.info-footer {
+  font-size: 1.25em;
 }
