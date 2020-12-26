@@ -2,12 +2,13 @@
 layout: post
 title: "Docker para cá, docker para lá. Mas afinal de contas o que é esse tal de docker ai?!"
 date: 2020-11-16 09:25:00 -0300
+tags: docker introducao iniciante
 categories: Docker
 ---
 
 Não se intimide com o Docker, pois é uma ferramenta com curva de aprendizado acentuada. No entanto, quando passar da curva terá em suas mãos uma das melhores ferramentas para o desenvolvimento de suas aplicações. Por isso, não se deixe intimidar, é normal achar tudo muito enigmático quando começamos a trabalhar com esta ferramenta.
 
-![Docker](/assets/img/2020-11-16-docker-cartoon.jpg)
+![Docker](/assets/img/posts/2020-11-16-docker-cartoon.jpg)
 
 Vamos começar vendo a sopa de letrinhas, pois há uma série de termos que costumam causar estranheza quando começamos a mexer o Docker.
 
@@ -15,7 +16,7 @@ Docker é uma ferramenta capaz de executar aplicações em ambientes isolados, e
 
 Criar o Dockerfile não é suficiente para subir um container com a aplicação, é preciso realizar o build da imagem o que permite que essa imagem seja reutilizada sempre que necessário. É como se você tivesse colocado os ingredientes de um bolo no forno para assar. Uma vez que a imagem já foi construída você poderá reutiliza-la sempre que precisar e é possível compartilhar a imagem em um repositório como o Docker Hub por exemplo, lá existem várias imagens prontas para uso.
 
-![Docker Build](/assets/img/2020-11-16-docker-build.png)
+![Docker Build](/assets/img/posts/2020-11-16-docker-build.png)
 
 Quer uma dica para aprender Docker? Comece a subir imagens com aplicações simples e de preferência que já conheça o comportamento. Desta forma não terá duas aprendizagens acontecendo ao mesmo tempo, apenas uma. Isso atenua bastante a sua curva de aprendizagem. A sugestão é começar subindo instâncias de bancos de dados, pois são aplicações muito conhecidas e fáceis de interagir.
 
@@ -50,4 +51,4 @@ Tudo feito. Se você quiser parar e remover o container ao mesmo tempo use o seg
 
 Pronto! Agora você já sabe resumidamente o que é o Docker e como subir uma instância do postgres sem ter que instalar o Postgres na sua máquina.
 
-![Amigos do Docker](/assets/img/2020-11-16-docker-friends.png)
+![Amigos do Docker](/assets/img/posts/2020-11-16-docker-friends.png)
