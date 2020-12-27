@@ -4,7 +4,7 @@ title: "Docker para cá, docker para lá. Mas afinal de contas o que é esse tal
 date: 2020-11-16 09:25:00 -0300
 tags: docker introducao iniciante
 categories: Docker
-pin: true
+pin: false
 ---
 
 Não se intimide com o Docker, pois é uma ferramenta com curva de aprendizado acentuada. No entanto, quando passar da curva terá em suas mãos uma das melhores ferramentas para o desenvolvimento de suas aplicações. Por isso, não se deixe intimidar, é normal achar tudo muito enigmático quando começamos a trabalhar com esta ferramenta.
