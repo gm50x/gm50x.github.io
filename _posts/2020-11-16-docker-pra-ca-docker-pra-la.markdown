@@ -3,7 +3,7 @@ layout: post
 title: "Docker para cá, docker para lá. Mas afinal de contas o que é esse tal de docker ai?!"
 date: 2020-11-16 09:25:00 -0300
 tags: docker introducao iniciante
-categories: Docker
+categories: Tutorial Docker
 pin: false
 ---
 
