@@ -9,26 +9,24 @@ pin: true
 
 ## Windows Subsystem for Linux
 
-O WSL é uma ferramenta sensacional para desenvolvedores que tem computadores Windows. Ele nos permite ter um kernel linux com o bash e a todas as ferramentas de desenvolvimento do linux no ambiente Windows sem a necessidade de fazer um dual boot, ficar reiniciando o computador para trocar de SO ou qualquer outra gambiarra. A primeira versão da ferramenta era um pouco lenta, mas a versão atual (WSL2) é literalmente um terminal bash dentro do Windows com pouquíssimas restrições.
+O WSL é uma ferramenta sensacional para desenvolvedores que usam o Windows 10. Ele nos permite ter um kernel linux com o bash e a todas as ferramentas de desenvolvimento do linux no ambiente Windows sem a necessidade de fazer um dual boot, ficar reiniciando o computador para trocar de SO ou qualquer outra gambiarra. A primeira versão da ferramenta era um pouco lenta, mas a versão atual, o WSL2, é literalmente um terminal bash dentro do Windows com pouquíssimas restrições.
 
-Para instalar o WSL basta seguir alguns passos conforme as instruções da Microsoft disponíveis [nesse tutorial](https://docs.microsoft.com/pt-br/windows/wsl/install-win10).
+Para instalar o WSL basta seguir as instruções da Microsoft, disponíveis [nesse tutorial](https://docs.microsoft.com/pt-br/windows/wsl/install-win10).
 
-Mas resumindo, basta abrir o Powershell em modo administrador e executar esses comandos:
+Mas resumindo, é só abrir o Powershell em modo administrador e executar esses comandos:
 ```Powershell
-# Habilitar o WSL
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-# Habilitar a Plataforma de Máquina Virtual
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-Baixe e instale as [atualizações](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) do kernel Linux para o WSL2 da Microsoft e defina o WSL2 como a versão padrão no Powershell.
+Após executar os comandos, baixe e instale as [atualizações](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) do kernel Linux para o WSL2 da Microsoft e defina o WSL2 como a versão padrão no Powershell.
 
 ```Powershell
 # Definir o WSL2 como a versão padrão
 wsl --set-default-version 2
 ```
 
-Agora reinicie seu computador e já poderá instalar um terminal para interagir com o Linux de dentro do Windows. Para isso, vá até a Microsoft Store e digite WSL na busca, escolha a sua distro preferida e instale. Sugerimos que intale o Ubuntu 20.04 se não tiver familiaridade com as distribuições Linux.
+Agora reinicie seu computador e já poderá instalar um terminal para interagir com o Linux de dentro do Windows. Para isso, vá até a Microsoft Store e digite WSL na busca, escolha a sua distro preferida e instale. Sugerimos que intale o Ubuntu 20.04 se não tiver familiaridade com as distribuições Linux. Após a instalação um novo aplicativo ficará disponível para você acessar o terminal no Windows.
 
 ## VSCode e Build Essential
 
@@ -45,7 +43,7 @@ sudo apt update
 sudo apt get install build-essential
 ```
 
-O build-essential é uma coleção de bibliotecas utilizadas para compilação de uma série de aplicações, algumas dependências do Node utilizam arquivos desta biblioteca.
+O build-essential é uma coleção de bibliotecas utilizadas para compilação de uma série de aplicações, algumas dependências do Node utilizam esta biblioteca.
 
 ## NVM e Node LTS
 
@@ -72,7 +70,7 @@ Teste a instalação do node.
 node -v
 ```
 
-Pronto, o ambiente configurado com sucesso! Agora você já pode criar seus projetos de dentro do Terminal linux, digitar code . e seguir com a programação! Vamos fazer um hello world com node? Execute os seguintes comandos para iniciar o projeto.
+Pronto, o ambiente configurado com sucesso! Agora você já pode criar seus projetos de dentro do Terminal linux e seguir com a programação! Vamos fazer um hello world com node? Execute os seguintes comandos para iniciar o projeto.
 
 ```bash
 cd
