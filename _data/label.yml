@@ -17,4 +17,4 @@ post:
 
 search_hint: Buscar   # text show on search bar
 
-pin_prompt: Novo  # pinned prompt
+pin_prompt: Pinned  # pinned prompt
