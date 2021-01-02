@@ -4,7 +4,7 @@ title: "Como configurar um proxy autenticado com filtro de User-Agent no AWS-SDK
 date: 2020-12-27 12:00:00 -0300
 tags: node aws-sdk configuracao proxy
 categories: Tutorial Node
-pin: true
+pin: false
 ---
 
 <p style="text-align: justify">
